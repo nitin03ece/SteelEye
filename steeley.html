@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module steeley</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>steeley</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cnsinha%5Cvideos%5Cnsinha%5Cnitin%5Csteeleye%5Csteeleye%5Csteeley.py">c:\users\nsinha\videos\nsinha\nitin\steeleye\steeleye\steeley.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="xml.etree.ElementTree.html">xml.etree.ElementTree</a><br>
+<a href="boto3.html">boto3</a><br>
+</td><td width="25%" valign=top><a href="csv.html">csv</a><br>
+<a href="logging.html">logging</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+<a href="re.html">re</a><br>
+</td><td width="25%" valign=top><a href="requests.html">requests</a><br>
+<a href="traceback.html">traceback</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="steeley.html#AWSUpload">AWSUpload</a>
+</font></dt><dt><font face="helvetica, arial"><a href="steeley.html#FileConversion">FileConversion</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="AWSUpload">class <strong>AWSUpload</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#AWSUpload">AWSUpload</a>(bucket)<br>
+&nbsp;<br>
+AWS&nbsp;Upload&nbsp;Class.&nbsp;This&nbsp;class&nbsp;uploads&nbsp;file&nbsp;in&nbsp;the&nbsp;given&nbsp;AWS&nbsp;S3&nbsp;bucket<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="AWSUpload-__init__"><strong>__init__</strong></a>(self, bucket)</dt><dd><tt><a href="#AWSUpload">AWSUpload</a>&nbsp;Class&nbsp;init&nbsp;function.&nbsp;Takes&nbsp;existing&nbsp;S3&nbsp;bucket&nbsp;as&nbsp;an&nbsp;argument.</tt></dd></dl>
+
+<dl><dt><a name="AWSUpload-upload_file"><strong>upload_file</strong></a>(self, file_to_upload, file_upload_name)</dt><dd><tt>This&nbsp;function&nbsp;take&nbsp;file&nbsp;and&nbsp;file&nbsp;name&nbsp;string&nbsp;as&nbsp;an&nbsp;argument.<br>
+And&nbsp;uploads&nbsp;the&nbsp;file&nbsp;in&nbsp;the&nbsp;given&nbsp;S3&nbsp;bucket.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="FileConversion">class <strong>FileConversion</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>File&nbsp;Conversion&nbsp;class.&nbsp;This&nbsp;deals&nbsp;with&nbsp;many&nbsp;file&nbsp;related&nbsp;functionality&nbsp;namely:<br>
+-&nbsp;Get&nbsp;root&nbsp;element&nbsp;of&nbsp;the&nbsp;xml&nbsp;file.<br>
+-&nbsp;Search&nbsp;zip&nbsp;file,&nbsp;within&nbsp;the&nbsp;xml&nbsp;content&nbsp;and&nbsp;dowload&nbsp;to&nbsp;the&nbsp;current&nbsp;directory<br>
+-&nbsp;Extract&nbsp;the&nbsp;downloaded&nbsp;zip&nbsp;file.<br>
+-&nbsp;Convert&nbsp;the&nbsp;extracted&nbsp;file&nbsp;into&nbsp;csv&nbsp;format.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="FileConversion-convert_xml_to_csv"><strong>convert_xml_to_csv</strong></a>(root)</dt><dd><tt>This&nbsp;Function&nbsp;takes&nbsp;root&nbsp;element(xml&nbsp;file)&nbsp;as&nbsp;an&nbsp;argument.&nbsp;<br>
+Parse&nbsp;through&nbsp;the&nbsp;xml&nbsp;content&nbsp;and&nbsp;filters&nbsp;out&nbsp;specific&nbsp;subtags&nbsp;under&nbsp;'FinInstrmGnlAttrbts'&nbsp;tag&nbsp;such&nbsp;as:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Id<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;FullNm<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;ClssfctnTp<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;CmmdtyDerivInd<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;NtnlCcy<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Issr<br>
+Parsed&nbsp;filtered&nbsp;data&nbsp;is&nbsp;further&nbsp;written&nbsp;in&nbsp;csv&nbsp;file.&nbsp;This&nbsp;function&nbsp;returns&nbsp;the&nbsp;created&nbsp;csv&nbsp;file.</tt></dd></dl>
+
+<dl><dt><a name="FileConversion-download_zip_file"><strong>download_zip_file</strong></a>(root, download_link_type='DLTINS')</dt><dd><tt>This&nbsp;Function&nbsp;takes&nbsp;root&nbsp;element(xml&nbsp;file)&nbsp;and&nbsp;a&nbsp;substring&nbsp;of&nbsp;download&nbsp;link&nbsp;as&nbsp;an&nbsp;argument.&nbsp;<br>
+Searches&nbsp;for&nbsp;the&nbsp;first&nbsp;download&nbsp;link&nbsp;matching&nbsp;that&nbsp;substring&nbsp;and&nbsp;<br>
+download&nbsp;that&nbsp;zip&nbsp;file&nbsp;and&nbsp;perform&nbsp;its&nbsp;extraction.</tt></dd></dl>
+
+<dl><dt><a name="FileConversion-get_xml_root"><strong>get_xml_root</strong></a>(file)</dt><dd><tt>This&nbsp;Function&nbsp;takes&nbsp;the&nbsp;XML&nbsp;file&nbsp;as&nbsp;an&nbsp;argument&nbsp;and&nbsp;returns&nbsp;its&nbsp;root&nbsp;element.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-main"><strong>main</strong></a>(xml_file)</dt><dd><tt>Python&nbsp;main&nbsp;function,&nbsp;which&nbsp;take&nbsp;an&nbsp;xml&nbsp;file&nbsp;as&nbsp;an&nbsp;argument&nbsp;<br>
+and&nbsp;extract&nbsp;desirable&nbsp;infomation&nbsp;<br>
+and&nbsp;upload&nbsp;that&nbsp;data&nbsp;to&nbsp;AWS&nbsp;S3&nbsp;bucket.</tt></dd></dl>
+ <dl><dt><a name="-startLogging"><strong>startLogging</strong></a>()</dt><dd><tt>Initialize&nbsp;basic&nbsp;configuration&nbsp;for&nbsp;logging.</tt></dd></dl>
+</td></tr></table>
+</body></html>
