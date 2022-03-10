@@ -193,8 +193,8 @@ def main(xml_file):
                 csv_file_name = file.convert_xml_to_csv(root_two)
                 if csv_file_name:
                     bucketName = "steeleye03"
-                    # aws_s3 = AWSUpload(bucketName)
-                    # aws_s3.upload_file(csv_file_name, "s3_"+csv_file_name)
+                    aws_s3 = AWSUpload(bucketName)
+                    aws_s3.upload_file(csv_file_name, "s3_"+csv_file_name)
                 else:
                     log_info = f"{csv_file_name}] Does not exist!"
                     logging.info(log_info)
